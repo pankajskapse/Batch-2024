@@ -43,7 +43,7 @@ public class loginAndUserRightsTest extends TestBase
 		loginWelcome_SD lw= new loginWelcome_SD();
 		lw.login(user, password);	
 		
-		databaseConnection();
+		//databaseConnection();
 		
 		List<WebElement> userMenu = driver.findElements(By.xpath("//div[@class='scroll-sidebar']/nav/ul/li"));
 		if(dbMenuCount != userMenu.size())
